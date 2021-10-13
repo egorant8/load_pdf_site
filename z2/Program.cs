@@ -51,7 +51,7 @@ namespace z2
                             excelapp.Visible = false;
                             _Workbook workbook = excelapp.Workbooks.Open(fullpath + @"results.xlsx");
                             _Worksheet worksheet = (_Worksheet)workbook.ActiveSheet;
-                            string qrtext = "http://vgp1.ru/covid19/Valid_covid.php?unik=" + dataReader[18].ToString() + "&qr=" + dataReader[1].ToString();
+                            string qrtext = "http://нашсайт.ru/covid19/Valid_covid.php?unik=" + dataReader[18].ToString() + "&qr=" + dataReader[1].ToString();
                             QRCodeEncoder encoder = new QRCodeEncoder();
                             Bitmap qrcode = encoder.Encode(qrtext);
                             qrcode.Save(@"qrcode\s1.png", ImageFormat.Png);
