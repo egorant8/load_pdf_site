@@ -22,7 +22,7 @@ namespace Загрузка_на_сайт
     {
         static string fullpath = Assembly.GetExecutingAssembly().Location.Replace("Загрузка на сайт.exe","") + @"\";
         static WebClient wb = new WebClient();
-        static string url = "http://vgp1.ru/covid19load/";
+        static string url = "http://нашсайт.ru/covid19load/";
         static string urlClose_Server = "http://10.0.8.206/load/";
         //static string url = "http://localhost/load/";
 
